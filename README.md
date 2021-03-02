@@ -9,3 +9,6 @@ dissrcは、discord用botのオープンソース化を推進したいために�
 3.このアプリを使ってソースを生成する(例:dissrc botmain0.py token.txt botmain.py)<br>
 4.トークンを追加した起動可能なソースコードができる(今回の場合botmain.py)<br>
 5.また、.gitignoreがあるためgithubにそのままpushできる!<br>
+
+サンプルも兼ねてbotのソースを公開しているので良ければ(宣伝)
+https://github.com/HonokaNo/Honoka_discord_Bot
