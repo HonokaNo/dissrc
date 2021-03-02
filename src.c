@@ -27,8 +27,8 @@ int main(int argc, char **argv)
 
 	/* トークンを埋め込み */
 	memcpy(run, "client.run('", 12);
-	memcpy(run + 11, token, 59);
-	memcpy(run + 11 + 59, "')", 2);
+	memcpy(run + 12, token, 59);
+	memcpy(run + 12 + 59, "')", 2);
 
 	/* input read */
 	FILE *input = fopen(argv[1], "r");
@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 	/* 出力側にinputのデータをすべて入れる */
 	fwrite(ip, ist.st_size, 1, output);
 	fwrite(newline, 1, 1, output);
-	fwrite(run, 59 + 12, 1, output);
+	fwrite(run, 59 + 14, 1, output);
 
 	fclose(input);
 	fclose(output);
