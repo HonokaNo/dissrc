@@ -9,7 +9,7 @@ int main(int argc, char **argv)
 	char *ip;
 	struct stat ist;
 	const unsigned char *newline = "\n";
-	unsigned char *run = calloc(65 + 12, 1);
+	unsigned char *run = calloc(65 + 14, 1);
 
 	if(argc < 4 || argc > 4){
 		printf("dissrc input.py token.txt output.py\n");
@@ -26,9 +26,9 @@ int main(int argc, char **argv)
 	fclose(tokens);
 
 	/* トークンを埋め込み */
-	memcpy(run, "client.run(", 11);
+	memcpy(run, "client.run('", 12);
 	memcpy(run + 11, token, 59);
-	memcpy(run + 11 + 59, ")", 1);
+	memcpy(run + 11 + 59, "')", 2);
 
 	/* input read */
 	FILE *input = fopen(argv[1], "r");
