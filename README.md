@@ -12,3 +12,7 @@ dissrcは、discord用botのオープンソース化を推進したいために�
 
 サンプルも兼ねてbotのソースを公開しているので良ければ(宣伝)
 https://github.com/HonokaNo/Honoka_discord_Bot
+
+# 追記
+dissrcは現在バグによりサポートを停止・開発無期限停止中です
+あまり大きなbotの場合バグが発生しうまく複製->トークン追加ができないようです
